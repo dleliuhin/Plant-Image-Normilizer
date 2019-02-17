@@ -1,0 +1,502 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>main</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-02-18"><meta name="DC.source" content="main.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">MAIN</a></li><li><a href="#3">Code</a></li></ul></div><pre class="codeinput"><span class="keyword">function</span> main()
+</pre><h2>MAIN<a name="2"></a></h2><p>Summary of this function goes here.</p><div><ul><li>Syntax [] = MAIN()</li></ul></div><div><ul><li>Examples:</li></ul></div><p>Provide sample usage code here</p><div><ul><li>See also:</li></ul></div><p>List related files here</p><div><ul><li>Author: Dmitrii Leliuhin</li><li>Email: <a href="mailto:dleliuhin@mail.ru">dleliuhin@mail.ru</a></li><li>Date: 25/12/2018 19:30:05</li><li>Version: 1.0 $</li><li>Requirements: PCWIN64, MatLab R2016a</li></ul></div><div><ul><li>Warning:</li></ul></div><div><ol><li>Warnings list.</li></ol></div><div><ul><li>TODO:</li></ul></div><div><ol><li>TODO list.</li></ol></div><h2>Code<a name="3"></a></h2><pre class="codeinput">clc;
+clear;
+close <span class="string">all</span>;
+
+addpath(strcat(pwd,<span class="string">'\images\original'</span>), <span class="keyword">...</span>
+        strcat(pwd,<span class="string">'\images\normilized'</span>), <span class="string">'-end'</span>);
+savepath;
+
+<span class="comment">% Reading original image files from folders.</span>
+f = dir(<span class="string">'images/original/*.jpg'</span>);
+
+<span class="comment">% Creating array of image file names.</span>
+fileName = {f.name};
+
+<span class="comment">% Sort fileNames using natuaral sorting.</span>
+fileName = natsortfiles(fileName);
+
+se = strel(<span class="string">'disk'</span>,15);
+
+<span class="comment">% ImageMaxPixels = ones(n,m)*255;</span>
+<span class="comment">%</span>
+<span class="comment">% rr = I(:,:,1);</span>
+<span class="comment">% gr = I(:,:,2);</span>
+<span class="comment">% br = I(:,:,3);</span>
+<span class="comment">%</span>
+<span class="comment">% rz = zeros(n,m);</span>
+<span class="comment">% gz = zeros(n,m);</span>
+<span class="comment">% bz = zeros(n,m);</span>
+<span class="comment">%</span>
+<span class="comment">% for i = 1:n</span>
+<span class="comment">%     for j = 1:m</span>
+<span class="comment">%         rz(i,j) = rr(i,j) / ImageMaxPixels(i,j);</span>
+<span class="comment">%         gz(i,j) = gr(i,j) / ImageMaxPixels(i,j);</span>
+<span class="comment">%         bz(i,j) = br(i,j) / ImageMaxPixels(i,j);</span>
+<span class="comment">%     end</span>
+<span class="comment">% end</span>
+<span class="comment">%</span>
+<span class="comment">% r = rz./(rz+gz+bz);</span>
+<span class="comment">% g = gz./(rz+gz+bz);</span>
+<span class="comment">% b = bz./(rz+gz+bz);</span>
+
+<span class="keyword">for</span> i=1:length(fileName)
+
+    I = imread(fullfile(<span class="string">'images/original'</span>, fileName{i}));
+
+    [n, m, k] = size(I);
+
+    r = I(:,:,1);
+    g = I(:,:,2);
+    b = I(:,:,3);
+
+    figure;
+    <span class="comment">% Maximize the figure.</span>
+    set(gcf, <span class="string">'Position'</span>, get(0, <span class="string">'ScreenSize'</span>));
+
+    subplot(4, 4, 1);
+     imshow(I);
+    drawnow;
+     title(<span class="string">'Original'</span>);
+
+     subplot(4, 4, 2);
+    G = rgb2gray(I);
+    imshow(G);
+    drawnow;
+    title(<span class="string">'Grayscaled'</span>);
+
+    subplot(4, 4, 3);
+    G = imgaussfilt(G);
+     imshow(G);
+     drawnow;
+     title(<span class="string">'Gauss Filtered'</span>);
+
+    subplot(4, 4, 4);
+    G = imadjust(G);
+    imshow(G);
+    drawnow;
+    title(<span class="string">'Adjusted'</span>);
+
+    subplot(4, 4, 5);
+    NDI = (g+r)./(g-r);
+    imshow(NDI);
+    drawnow;
+    title(<span class="string">'NDI = (G+R)/(G-R)'</span>);
+
+    subplot(4, 4, 6);
+    EG = (2).*g-r-b;
+    imshow(EG);
+    drawnow;
+    title(<span class="string">'E*G = 2*G-R-B'</span>);
+
+    subplot(4, 4, 7);
+    ER = (1.4).*r-g;
+    imshow(ER);
+    drawnow;
+    title(<span class="string">'E*R = 1.4*R-G'</span>);
+
+    subplot(4, 4, 8);
+    EGER = EG-ER;
+    imshow(EGER);
+    drawnow;
+    title(<span class="string">'E*G - E*R'</span>);
+
+     subplot(4, 4, 9);
+    <span class="comment">%     NDI = imgaussfilt(NDI);</span>
+        grayLvl = graythresh(NDI);
+        NDIOtsu = imbinarize(NDI, grayLvl);
+        NDIOtsu = imcomplement(NDIOtsu);
+        NDIOtsu = bwmorph(NDIOtsu, <span class="string">'erode'</span>, 2);
+        stats = regionprops(NDIOtsu, <span class="string">'Area'</span>);
+        max_blob = max( [stats.Area] );
+        NDIOtsu = bwareaopen(NDIOtsu, max_blob);
+     imshow(NDIOtsu);
+     drawnow;
+     title(<span class="string">'NDI + Otsu Binary Image'</span>);
+
+     subplot(4, 4, 10);
+    <span class="comment">% EG = imgaussfilt(EG);</span>
+    grayLvl = graythresh(EG);
+    EGOtsu = imbinarize(EG, grayLvl);
+     imshow(EGOtsu);
+     drawnow;
+     title(<span class="string">'E*G + Otsu Binary Image'</span>);
+
+     subplot(4, 4, 12);
+     EGER = imgaussfilt(EGER);
+    EGER = imbinarize(EGER, 0);
+        EGER = bwmorph(EGER, <span class="string">'erode'</span>, 4);
+        stats = regionprops(EGER, <span class="string">'Area'</span>);
+        max_blob = max( [stats.Area] );
+        EGER = bwareaopen(EGER, max_blob);
+     imshow(EGER);
+     drawnow;
+     title(<span class="string">'E*G-E*R Binary Image'</span>);
+
+    EGER = NDIOtsu;
+
+    orientation = regionprops(EGER, <span class="string">'Orientation'</span>);
+
+     subplot(4, 4, 13);
+    EGERC = imrotate(EGER, <span class="keyword">...</span>
+                  abs(orientation(1).Orientation) - 90, <span class="keyword">...</span>
+                  <span class="string">'bilinear'</span>, <span class="keyword">...</span>
+                  <span class="string">'crop'</span>);
+     imshow(EGERC);
+     drawnow;
+     title(<span class="string">'Rotated Binary Image'</span>);
+
+    <span class="comment">% height = regionprops(EGERC, 'MajorAxisLength');</span>
+    <span class="comment">% width = regionprops(EGERC, 'MinorAxisLength');</span>
+    <span class="comment">% pixelList = regionprops(EGERC, 'PixelList');</span>
+
+     subplot(4, 4, 14);
+    IC = imrotate(I, <span class="keyword">...</span>
+                  abs(orientation.Orientation(1)) - 90, <span class="keyword">...</span>
+                  <span class="string">'bilinear'</span>, <span class="keyword">...</span>
+                  <span class="string">'crop'</span>);
+     imshow(IC);
+     drawnow;
+     title(<span class="string">'Rotated Original Image'</span>);
+
+    extremums = regionprops(EGERC, <span class="string">'Extrema'</span>);
+
+    [row,col] = find(EGERC);
+
+    <span class="comment">% Find top left and bottom right corners</span>
+    top_row = min(row);
+    top_col = min(col);
+    bottom_row = max(row);
+    bottom_col = max(col);
+
+    centers = regionprops(EGERC, <span class="string">'Centroid'</span>);
+    height = length(top_row:bottom_row);
+    width = length(top_col:bottom_col);
+
+    left_edge = floor(centers(1).Centroid(1) - 50);
+    right_edge = floor(centers(1).Centroid(1) + 50);
+    top_edge = floor(centers(1).Centroid(2) - 150);
+    bottom_edge = floor(centers(1).Centroid(2) + 150);
+
+
+     subplot(4, 4, 16);
+    <span class="comment">% Crop the image</span>
+    RES = imcrop(IC, [left_edge, top_edge, <span class="keyword">...</span>
+                      right_edge - left_edge - 1, <span class="keyword">...</span>
+                      bottom_edge - top_edge - 1]);
+     imshow(RES);
+     drawnow;
+     title(<span class="string">'Cropped Original Image'</span>);
+
+    imwrite(RES, fullfile(<span class="string">'images'</span>, <span class="string">'normilized'</span>, <span class="keyword">...</span>
+            strcat(<span class="string">'norm_'</span>, num2str(i), <span class="string">'.jpg'</span>)));
+
+
+    clear <span class="string">I</span> <span class="string">G</span> <span class="string">r</span> <span class="string">g</span> <span class="string">b</span> <span class="string">centers</span> <span class="string">EG</span> <span class="string">EGER</span> <span class="string">EGERC</span> <span class="string">EGOtsu</span> <span class="string">ER</span> <span class="string">extremums</span> <span class="string">IC</span> <span class="string">NDI</span>;
+    clear <span class="string">NDIOtsu</span> <span class="string">orientation</span> <span class="string">RES</span> <span class="string">stats</span> <span class="string">col</span> <span class="string">row</span> ;
+    close <span class="string">all</span>;
+<span class="keyword">end</span>
+</pre><pre class="codeinput"><span class="keyword">end</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+function main()
+%% MAIN
+% Summary of this function goes here. 
+% 
+% * Syntax 
+% [] = MAIN()
+% 
+% * Examples: 
+% 
+% Provide sample usage code here
+% 
+% * See also: 
+% 
+% List related files here 
+% 
+% * Author: Dmitrii Leliuhin 
+% * Email: dleliuhin@mail.ru 
+% * Date: 25/12/2018 19:30:05 
+% * Version: 1.0 $ 
+% * Requirements: PCWIN64, MatLab R2016a 
+% 
+% * Warning: 
+% 
+% # Warnings list. 
+% 
+% * TODO: 
+% 
+% # TODO list. 
+% 
+
+%% Code 
+clc;
+clear;
+close all;
+
+addpath(strcat(pwd,'\images\original'), ...
+        strcat(pwd,'\images\normilized'), '-end');
+savepath;
+
+% Reading original image files from folders.
+f = dir('images/original/*.jpg');
+
+% Creating array of image file names.
+fileName = {f.name};
+
+% Sort fileNames using natuaral sorting.
+fileName = natsortfiles(fileName);
+
+se = strel('disk',15);
+
+% ImageMaxPixels = ones(n,m)*255;
+% 
+% rr = I(:,:,1);
+% gr = I(:,:,2);
+% br = I(:,:,3);
+% 
+% rz = zeros(n,m);
+% gz = zeros(n,m);
+% bz = zeros(n,m);
+% 
+% for i = 1:n
+%     for j = 1:m
+%         rz(i,j) = rr(i,j) / ImageMaxPixels(i,j);
+%         gz(i,j) = gr(i,j) / ImageMaxPixels(i,j);
+%         bz(i,j) = br(i,j) / ImageMaxPixels(i,j);
+%     end
+% end
+% 
+% r = rz./(rz+gz+bz);
+% g = gz./(rz+gz+bz);
+% b = bz./(rz+gz+bz);
+
+for i=1:length(fileName)
+
+    I = imread(fullfile('images/original', fileName{i}));
+    
+    [n, m, k] = size(I);
+    
+    r = I(:,:,1);
+    g = I(:,:,2);
+    b = I(:,:,3);
+
+    figure;
+    % Maximize the figure.
+    set(gcf, 'Position', get(0, 'ScreenSize'));
+
+    subplot(4, 4, 1);
+     imshow(I);
+    drawnow;
+     title('Original');
+
+     subplot(4, 4, 2);
+    G = rgb2gray(I);
+    imshow(G);
+    drawnow;
+    title('Grayscaled');
+
+    subplot(4, 4, 3);
+    G = imgaussfilt(G);
+     imshow(G);
+     drawnow;
+     title('Gauss Filtered');
+
+    subplot(4, 4, 4);
+    G = imadjust(G);
+    imshow(G);
+    drawnow;
+    title('Adjusted');
+
+    subplot(4, 4, 5);
+    NDI = (g+r)./(g-r);
+    imshow(NDI);
+    drawnow;
+    title('NDI = (G+R)/(G-R)');
+
+    subplot(4, 4, 6);
+    EG = (2).*g-r-b;
+    imshow(EG);
+    drawnow;
+    title('E*G = 2*G-R-B');
+
+    subplot(4, 4, 7);
+    ER = (1.4).*r-g;
+    imshow(ER);
+    drawnow;
+    title('E*R = 1.4*R-G');
+
+    subplot(4, 4, 8);
+    EGER = EG-ER;
+    imshow(EGER);
+    drawnow;
+    title('E*G - E*R');
+
+     subplot(4, 4, 9);
+    %     NDI = imgaussfilt(NDI);
+        grayLvl = graythresh(NDI);
+        NDIOtsu = imbinarize(NDI, grayLvl);
+        NDIOtsu = imcomplement(NDIOtsu);
+        NDIOtsu = bwmorph(NDIOtsu, 'erode', 2);
+        stats = regionprops(NDIOtsu, 'Area');
+        max_blob = max( [stats.Area] );
+        NDIOtsu = bwareaopen(NDIOtsu, max_blob);
+     imshow(NDIOtsu);
+     drawnow;
+     title('NDI + Otsu Binary Image');
+
+     subplot(4, 4, 10);
+    % EG = imgaussfilt(EG);
+    grayLvl = graythresh(EG);
+    EGOtsu = imbinarize(EG, grayLvl);
+     imshow(EGOtsu);
+     drawnow;
+     title('E*G + Otsu Binary Image');
+
+     subplot(4, 4, 12);
+     EGER = imgaussfilt(EGER);
+    EGER = imbinarize(EGER, 0);
+        EGER = bwmorph(EGER, 'erode', 4);
+        stats = regionprops(EGER, 'Area');
+        max_blob = max( [stats.Area] );
+        EGER = bwareaopen(EGER, max_blob);
+     imshow(EGER);
+     drawnow;
+     title('E*G-E*R Binary Image');
+
+    EGER = NDIOtsu;
+
+    orientation = regionprops(EGER, 'Orientation');
+
+     subplot(4, 4, 13);
+    EGERC = imrotate(EGER, ...
+                  abs(orientation(1).Orientation) - 90, ...
+                  'bilinear', ...
+                  'crop');
+     imshow(EGERC);
+     drawnow;
+     title('Rotated Binary Image');
+
+    % height = regionprops(EGERC, 'MajorAxisLength');
+    % width = regionprops(EGERC, 'MinorAxisLength');
+    % pixelList = regionprops(EGERC, 'PixelList');
+
+     subplot(4, 4, 14);
+    IC = imrotate(I, ...
+                  abs(orientation.Orientation(1)) - 90, ...
+                  'bilinear', ...
+                  'crop');
+     imshow(IC);
+     drawnow;
+     title('Rotated Original Image');
+
+    extremums = regionprops(EGERC, 'Extrema');
+
+    [row,col] = find(EGERC);
+
+    % Find top left and bottom right corners
+    top_row = min(row);
+    top_col = min(col);
+    bottom_row = max(row);
+    bottom_col = max(col);
+
+    centers = regionprops(EGERC, 'Centroid');
+    height = length(top_row:bottom_row);
+    width = length(top_col:bottom_col);
+
+    left_edge = floor(centers(1).Centroid(1) - 50);
+    right_edge = floor(centers(1).Centroid(1) + 50);
+    top_edge = floor(centers(1).Centroid(2) - 150);
+    bottom_edge = floor(centers(1).Centroid(2) + 150);
+
+
+     subplot(4, 4, 16);
+    % Crop the image
+    RES = imcrop(IC, [left_edge, top_edge, ...
+                      right_edge - left_edge - 1, ...
+                      bottom_edge - top_edge - 1]);
+     imshow(RES);
+     drawnow;
+     title('Cropped Original Image');
+
+    imwrite(RES, fullfile('images', 'normilized', ...
+            strcat('norm_', num2str(i), '.jpg')));
+        
+    
+    clear I G r g b centers EG EGER EGERC EGOtsu ER extremums IC NDI; 
+    clear NDIOtsu orientation RES stats col row ; 
+    close all;
+end
+
+end
+
+##### SOURCE END #####
+--></body></html>

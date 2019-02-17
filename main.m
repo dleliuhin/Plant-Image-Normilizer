@@ -1,5 +1,5 @@
 function main()
-%% MAIN 
+%% MAIN
 % Summary of this function goes here. 
 % 
 % * Syntax 
